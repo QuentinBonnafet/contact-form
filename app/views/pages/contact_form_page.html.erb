@@ -1,0 +1,7 @@
+<%= simple_form_for @contact_form, url: "/contact", method: :post do |f| %>
+        <%= f.input :first_name, placeholder: 'Votre prénom' %>
+        <%= f.input :last_name, placeholder: 'Votre nom' %>
+        <%= f.input :email, placeholder: 'Votre adresse email' %>
+        <%= f.input :message, placeholder: 'Message' %>
+        <%= f.submit "Envoyer", class: "btn btn-primary" %>
+    <% end %>
